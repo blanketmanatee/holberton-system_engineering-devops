@@ -1,14 +1,14 @@
 # Shell, I/O Reidrections and filters
-- **echo**
-- **cat**
-- **head**
-- **tail**
-- **find**
-- **wc**
-- **sort**
-- **uniq**
-- **grep**
-- **tr**
-- **rev**
-- **cut**
-- **passwd 5**
+- **echo**: Display message on screen, writes each given string to standard output with a space between each and a newline after. echo [options] ... [string]...
+- **cat**: Contatenate and print the content of files. cat [options] [file]...
+- **head**: Output the first part of files, prints the first part (10 lines by default) of each file. head [options]...[file]...
+- **tail**: Output the last part of files, prints the last 10 lines by default. Reads from standard input if no files are given. tail [options]... [file]...
+- **find**: Search a folder hierachy for filename(s) that meet a desired criteria: Name, Size, File Type. file [-H] [-L] [-P] [path...] [expression]
+- **wc**: Print byte, word, and line counts, count the number of bytes, whitespace-separated words, and new lines in each given file, or standard input if none are given or for a file of '-'. wc [options]... [file]...
+- **sort**: Sort, merge, or compare all lines from the files given (or standard input). sort [options] [file...] sort --help sort --version
+- **uniq**: Report of filter out repeated lines in a file. uniq [options]... [InputFile [OutputFile]]
+- **grep**: Search files for specific text. grep [options] PATTERN [FILE...] grep [options] [-e PATTERN | -f FILE] [FILE...]
+- **tr**: Translate, squeeze, and/or delete characters. tr [options]... SET1 [SET2]
+- **rev**: Reverses lines of a file. rev [file]
+- **cut**: Divide a file into several parts (columns) writes to standard output selected parts of each line of each input file, or standard input. cut [option]... [file]...
+- **passwd 5**: password file
