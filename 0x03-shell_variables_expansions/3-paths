@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $PATH | tr ":" "\n" | wc
+find . -maxdepth 1 -type d -printf . | wc -c
