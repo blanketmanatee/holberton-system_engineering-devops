@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # print files in current directory after the dash
 
-for FILE in ls *;
+for FILE in *;
 do
 echo "$FILE" | cut -d'-' -f2
 done
