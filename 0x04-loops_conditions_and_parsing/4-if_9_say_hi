@@ -10,5 +10,5 @@ do
     else
         echo "Holberton School"
     fi
-    ((i++))
+    (( i++ ))
 done
