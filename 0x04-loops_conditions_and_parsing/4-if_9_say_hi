@@ -6,9 +6,9 @@ while [ $i -le 10 ]
 do 
     if [[ $i -eq 9 ]]
     then
-        echo 'Hi'
+        echo "Hi"
     else
-        echo 'Holberton School'
+        echo "Holberton School"
     fi
     ((i=i+=1))
 done
