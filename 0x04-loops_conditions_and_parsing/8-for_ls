@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# print files in current directory after the dash
 
 for FILE in ls *;
 do

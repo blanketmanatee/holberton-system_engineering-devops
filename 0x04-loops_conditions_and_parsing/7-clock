@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# prints hours and minutes with while
 
 HOURS=0
 while [ $HOURS -lt 13 ]

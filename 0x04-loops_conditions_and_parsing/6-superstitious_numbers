@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# prints different message after 4 9 and 17
 
 i=1
 while [ $i -le 20 ];

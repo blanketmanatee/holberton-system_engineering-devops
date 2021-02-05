@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# tests a file 
 
 FILE=holbertonschool
 if [ -e "$FILE" ]; then
