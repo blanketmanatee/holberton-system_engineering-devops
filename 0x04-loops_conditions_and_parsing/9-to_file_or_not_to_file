@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+FILE=holbertonschool
+if test -e "$FILE"; then
+    echo "$FILE exists."
+else
+    echo "$FILE does not exist."
+fi
