@@ -2,5 +2,5 @@
 
 for FILE in ls *;
 do
-echo "$FILE"
+echo "$FILE" | cut -d'-' -f2
 done
