@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# groups visitors by IP HTTP status code and sorted in ascending order by
+# groups visitors by IP HTTP status code and sorted in descending order by
 # occurrence
 
-awk '{print $10,$1,$9}' apache-access.log | sort -rn
+awk '{print $10,$1,$9}' apache-access.log | sort -r -n
