@@ -2,4 +2,4 @@
 # groups visitors by IP HTTP status code and sorted in descending order by
 # occurrence
 
-awk '{print $10,$1,$9}' apache-access.log | sort -r -n
+awk '{print $1,$9}' apache-access.log | sort | uniq -c | sort -r -n
