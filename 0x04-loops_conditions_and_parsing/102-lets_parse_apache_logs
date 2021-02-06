@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# parses apache log file and displays IP and http status code
+# columns count white space 1 is IP address 9 is http status code. 
+
+awk '{print $1,$9}' apache-access.log
