@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# kills task 4
+
+kill 1943

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# kills process in task 7
+
+kill -9 2349

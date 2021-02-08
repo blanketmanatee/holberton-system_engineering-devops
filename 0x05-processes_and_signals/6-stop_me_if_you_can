@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# kill task 4 without kill or killall
+
+pkill -9 1943
