@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # kills process in task 7
 
-pkill -f "7-highlander" --signal -9
+pkill -f "7-highlander" --signal -SIGKILL
