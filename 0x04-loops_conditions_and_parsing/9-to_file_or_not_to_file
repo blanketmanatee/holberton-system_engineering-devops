@@ -4,11 +4,10 @@
 FILE=holbertonschool
 if [ -e "$FILE" ]; then
     echo "$FILE file exists"
-    if [ ! -s "$FILE" ]; then
-        echo "$FILE file is empty"
-    fi
     if [ -s "$FILE" ]; then
         echo "$FILE file is not empty"
+    else
+        echo "$FILE file is empty"
     fi
     if [ -f "$FILE" ]; then
         echo "$FILE file is a regular file"
