@@ -2,9 +2,9 @@
 # while and if to print Holberton School and Hi on 9th iteration
 
 i=1
-while [ $i -le 10 ]
+while [ $i -lt 12 ]
 do 
-    if [[ $i -eq 9 ]]
+    if [[ $i -eq 10 ]]
     then
         echo "Hi"
     else
