@@ -1,4 +1,4 @@
-# uses puppet to set up config file
+#uses puppet to set up config file
 
 include stdlib
 file_line {'Declare identity file':
