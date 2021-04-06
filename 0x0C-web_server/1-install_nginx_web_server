@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# installs nginx on server listening on port 80 and returns a page w str
+# Holberton School
+
