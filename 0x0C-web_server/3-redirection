@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# redirect 301 moved permanently
+
+
+sudo apt-get -y update
+sudo apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+echo 'Holberton School' | sudo tee  /var/www/html/index.html
+redirect="line number 1\nline number 2\nline number 3"
+sudo sed -i "s/string_to_replace/$new_string/" file
+sudo service nginx restart
