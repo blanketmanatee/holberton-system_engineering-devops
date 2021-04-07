@@ -2,8 +2,8 @@
 # installs nginx on server listening on port 80 and returns a page w str
 # Holberton School
 
-apt-get -y update
-apt-get -y install nginx
+sudo apt-get -y update
+sudo apt-get -y install nginx
 ufw allow 'Nginx HTTP'
 echo 'Holberton School' > /var/www/html/index.nginx-debian.html
 service nginx start
