@@ -6,6 +6,6 @@ sudo apt-get -y update
 sudo apt-get -y install nginx
 ufw allow 'Nginx HTTP'
 echo 'Holberton School' | sudo tee  /var/www/html/index.html
-redirect="line number 1\nline number 2\nline number 3"
-sudo sed -i '/listen 80 default_server;/a rewrite^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
+redirect="server_name ashleyprice.tech;\n\tlocation \/redirect_me {\n\treturn 301 https:\/\/www.youtube.com\/watch\?v=QH2-TGUlwu4;\n\t}"
+sudo sed -i "s/server_name _;/$string/" /etc/nginx/sites-available/default
 sudo service nginx restart
