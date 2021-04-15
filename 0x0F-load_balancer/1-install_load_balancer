@@ -4,3 +4,6 @@
 sudo apt update
 sudo apt-get install -y haproxy=1.6.\*
 proxConf=/etc/haproxy/haproxy.cfg
+ashley_config="\nfrontend http\n\tbind *:80\n\tmode http\n\tdefault_backend web-backend\n\nbackend web-backend\n\tbalance roundrobin\n\tserver 1844-web-01 35.231.104.168:80 check\n\tserver 1844-web-02 54.175.131.27 check\n"
+echo -e "$ashley_config" | sudo tee --append /etc/haproxy/haproxy.cfg
+sudo service haproxy restart
