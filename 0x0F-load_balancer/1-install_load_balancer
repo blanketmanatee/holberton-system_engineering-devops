@@ -7,5 +7,3 @@ ashley_config="\nfrontend http\n\tbind *:80\n\tmode http\n\tdefault_backend web-
 end web-backend\n\tbalance roundrobin\n\tmode http\n\toption forwardfor\n\tserver 1844-web-01 3
 5.231.104.168:80 check\n\tserver 1844-web-02 54.175.131.27 check\n"
 echo -e "$ashley_config" | sudo tee --append /etc/haproxy/haproxy.cfg
-sudo service haproxy reload
-sudo service haproxy restart
