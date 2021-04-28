@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# advanced
 pkill -f apache2
 chown -R nginx /etc/nginx/
 chmod 700 /etc/nginx/nginx.conf
