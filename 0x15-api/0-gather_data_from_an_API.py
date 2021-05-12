@@ -1,8 +1,8 @@
 #!/usr/bin/python3
+""" use API for employee progress on Todo list """
 import json
 import requests
 import sys
-""" use rest api for  employee id return information about todo list """
 
 
 if __name__ == "__main__":
