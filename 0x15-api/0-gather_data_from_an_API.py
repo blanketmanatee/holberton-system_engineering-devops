@@ -2,7 +2,7 @@
 import json
 import requests
 import sys
-""" use rest api for given employee id returning information about their todo list progress """
+""" use rest api for  employee id return information about todo list """
 
 
 if __name__ == "__main__":
