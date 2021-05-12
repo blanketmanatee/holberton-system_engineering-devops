@@ -10,10 +10,10 @@ if __name__ == "__main__":
     gets list progress
     """
     ID = int(argv[1])
-    user = requests.get("https://jsonplaceholder.typicode.com/users{}".
-                        format(ID)).json()
-    todo = requests.get("https://jsonplaceholder.typicode.com/todos{}".
-                        format(ID)).json()
+    user = requests.get("https://jsonplaceholder.typicode.com/users"
+                        ).json()
+    todo = requests.get("https://jsonplaceholder.typicode.com/todos"
+                        ).json()
     done = []
     for done in todo:
         if done.get('completed') is True:
