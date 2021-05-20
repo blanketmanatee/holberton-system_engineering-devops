@@ -6,9 +6,9 @@ import requests
 
 def number_of_subscribers(subreddit):
     """ Return number of subscribers for a subreddit """
-    url="https://www.reddit.com/r/{}/about.json".format(subreddit)
-    user_agent={"User-Agent": "bobthebuilder"}
-    request=requests.get(url, headers=user_agent)
+    url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
+    user_agent = {"User-Agent": "bobthebuilder"}
+    request = requests.get(url, headers=user_agent)
     if request.status_code == 200:
         request = request.json()
         data = request.get('data')
